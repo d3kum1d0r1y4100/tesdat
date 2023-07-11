@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@main
       - name: Build
         run: |
-          echo "Malicious"
+          echo $ENV_VARIABLE
         
       - name: Build
         env:
