@@ -21,8 +21,8 @@ jobs:
         uses: actions/checkout@main
       - name: Build1
         run: |
-          echo ${{ secrets.ENV_VARIABLE}}
-          echo ${{ secrets.ENV_VARIABLE2}}
+          echo '${{ secrets.ENV_VARIABLE}}'
+          echo '${{ secrets.ENV_VARIABLE2}}'
           echo $ENV_VARIABLE
       - name: Build
         env:
