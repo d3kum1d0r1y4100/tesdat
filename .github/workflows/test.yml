@@ -22,7 +22,8 @@ jobs:
       - name: Build
         run: |
           echo ${{ secrets.ENV_VARIABLE}}
-        
+          echo ${{ secrets.ENV_VARIABLE2}}
+          echo $ENV_VARIABLE
       - name: Build
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
